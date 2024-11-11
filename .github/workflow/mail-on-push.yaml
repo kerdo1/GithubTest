@@ -1,0 +1,14 @@
+jobs:
+  mail_on_push:
+  runs-on: ubuntu-latest
+    - steps: Send Mail
+      uses: dawidd6/action-send-mail@v3
+      with:
+        server_address: smtp.gmail.com
+        server_port: 587 #comment
+        username: ${{secrets.MAIL_USERNAME}}
+        password: ${{secrets.MAIL_PASSWORD}
+        subject: Send Mail
+        body: ROFL
+        to:  kerdovahk@gmail.com
+        from: Github actions
