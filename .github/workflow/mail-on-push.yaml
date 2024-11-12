@@ -12,5 +12,5 @@ jobs:
         password: ${{secrets.MAIL_PASSWORD}}
         subject: "Email te"
         body: "One more push was made by ${{ github.event.pusher.name }} to the repository ${{ github.repository }} with the commit message: '${{ github.event.head_commit.message }}'"
-        to: kerdovahk@gmail.com
+        to: kerdo8172@gmail.com
         from: "Github Actions"
